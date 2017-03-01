@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+
+<body>
+{{#people}}
+    <a href="/person?id={{id}}">{{firstName}} {{lastName}}</a><br/>
+{{/people}}
+
+
+<!--Show only if "previous" is added to HashMap */ -->
+{{#prevOffset}}
+    <a href="/?offset={{prevOffset}}">Previous</a>
+{{/prevOffset}}
+
+
+<!--Show only if "next" is added to HashMap */ -->
+{{#nextOffset}}
+    <a href="/?offset={{nextOffset}}">Next</a>
+{{/nextOffset}}
+
+
+</body>
+
+</html>
